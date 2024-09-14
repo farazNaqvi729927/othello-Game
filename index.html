@@ -2,135 +2,128 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Othello</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Othello.css">
-
 
 </head>
 
+
+
 <body>
-    <h1 class="head"> Othello Game: </h1>
-
-    <div id="a">
-
-        <div id="b"> </div>
-
-        <h4 id="turn"> </h4>
-
-    </div>
+    <container>
 
 
+        <h1 style="font-size: calc(1rem + 2.5vw);" class="container-fluid title">Othello Game:</h1>
 
-    <div class="a">
+
+        <div style="font-size: calc(1rem + 2vw);" class="container-fluid" id="b"> </div>
+        <h4 style="font-size: calc(1rem + 1vw);" class="container-fluid" id="turn"> </h4>
 
 
-        <div style="display: flex;font-size: 20px;column-gap: 5px;">
 
-            <div>
+        <div class="a container-fluid">
 
-                <div class="b">
-                    <button id="button00" onclick="Board(0,0)"></button>
-                    <button id="button01" onclick="Board(0,1)"></button>
-                    <button id="button02" onclick="Board(0,2)"></button>
-                    <button id="button03" onclick="Board(0,3)"></button>
-                    <button id="button04" onclick="Board(0,4)"></button>
-                    <button id="button05" onclick="Board(0,5)"></button>
-                    <button id="button06" onclick="Board(0,6)"></button>
-                    <button id="button07" onclick="Board(0,7)"></button>
+            <div class="b">
+                <button id="button00" onclick="Board(0,0)"></button>
+                <button id="button01" onclick="Board(0,1)"></button>
+                <button id="button02" onclick="Board(0,2)"></button>
+                <button id="button03" onclick="Board(0,3)"></button>
+                <button id="button04" onclick="Board(0,4)"></button>
+                <button id="button05" onclick="Board(0,5)"></button>
+                <button id="button06" onclick="Board(0,6)"></button>
+                <button id="button07" onclick="Board(0,7)"></button>
 
-                </div>
+            </div>
 
-                <div class="b">
-                    <button id="button10" onclick="Board(1,0)"></button>
-                    <button id="button11" onclick="Board(1,1)"></button>
-                    <button id="button12" onclick="Board(1,2)"></button>
-                    <button id="button13" onclick="Board(1,3)"></button>
-                    <button id="button14" onclick="Board(1,4)"></button>
-                    <button id="button15" onclick="Board(1,5)"></button>
-                    <button id="button16" onclick="Board(1,6)"></button>
-                    <button id="button17" onclick="Board(1,7)"></button>
-                </div>
+            <div class="b">
+                <button id="button10" onclick="Board(1,0)"></button>
+                <button id="button11" onclick="Board(1,1)"></button>
+                <button id="button12" onclick="Board(1,2)"></button>
+                <button id="button13" onclick="Board(1,3)"></button>
+                <button id="button14" onclick="Board(1,4)"></button>
+                <button id="button15" onclick="Board(1,5)"></button>
+                <button id="button16" onclick="Board(1,6)"></button>
+                <button id="button17" onclick="Board(1,7)"></button>
+            </div>
 
-                <div class="b">
-                    <button id="button20" onclick="Board(2,0)"></button>
-                    <button id="button21" onclick="Board(2,1)"></button>
-                    <button id="button22" onclick="Board(2,2)"></button>
-                    <button id="button23" onclick="Board(2,3)"></button>
-                    <button id="button24" onclick="Board(2,4)"></button>
-                    <button id="button25" onclick="Board(2,5)"></button>
-                    <button id="button26" onclick="Board(2,6)"></button>
-                    <button id="button27" onclick="Board(2,7)"></button>
-                </div>
+            <div class="b">
+                <button id="button20" onclick="Board(2,0)"></button>
+                <button id="button21" onclick="Board(2,1)"></button>
+                <button id="button22" onclick="Board(2,2)"></button>
+                <button id="button23" onclick="Board(2,3)"></button>
+                <button id="button24" onclick="Board(2,4)"></button>
+                <button id="button25" onclick="Board(2,5)"></button>
+                <button id="button26" onclick="Board(2,6)"></button>
+                <button id="button27" onclick="Board(2,7)"></button>
+            </div>
 
-                <div class="b">
-                    <button id="button30" onclick="Board(3,0)"></button>
-                    <button id="button31" onclick="Board(3,1)"></button>
-                    <button id="button32" onclick="Board(3,2)"></button>
-                    <button id="button33" onclick="Board(3,3)">W</button>
-                    <button id="button34" onclick="Board(3,4)">B</button>
-                    <button id="button35" onclick="Board(3,5)"></button>
-                    <button id="button36" onclick="Board(3,6)"></button>
-                    <button id="button37" onclick="Board(3,7)"></button>
-                </div>
+            <div class="b">
+                <button id="button30" onclick="Board(3,0)"></button>
+                <button id="button31" onclick="Board(3,1)"></button>
+                <button id="button32" onclick="Board(3,2)"></button>
+                <button id="button33" onclick="Board(3,3)">W</button>
+                <button id="button34" onclick="Board(3,4)">B</button>
+                <button id="button35" onclick="Board(3,5)"></button>
+                <button id="button36" onclick="Board(3,6)"></button>
+                <button id="button37" onclick="Board(3,7)"></button>
+            </div>
 
-                <div class="b">
-                    <button id="button40" onclick="Board(4,0)"></button>
-                    <button id="button41" onclick="Board(4,1)"></button>
-                    <button id="button42" onclick="Board(4,2)"></button>
-                    <button id="button43" onclick="Board(4,3)">B</button>
-                    <button id="button44" onclick="Board(4,4)">W</button>
-                    <button id="button45" onclick="Board(4,5)"></button>
-                    <button id="button46" onclick="Board(4,6)"></button>
-                    <button id="button47" onclick="Board(4,7)"></button>
-                </div>
+            <div class="b">
+                <button id="button40" onclick="Board(4,0)"></button>
+                <button id="button41" onclick="Board(4,1)"></button>
+                <button id="button42" onclick="Board(4,2)"></button>
+                <button id="button43" onclick="Board(4,3)">B</button>
+                <button id="button44" onclick="Board(4,4)">W</button>
+                <button id="button45" onclick="Board(4,5)"></button>
+                <button id="button46" onclick="Board(4,6)"></button>
+                <button id="button47" onclick="Board(4,7)"></button>
+            </div>
 
-                <div class="b">
-                    <button id="button50" onclick="Board(5,0)"></button>
-                    <button id="button51" onclick="Board(5,1)"></button>
-                    <button id="button52" onclick="Board(5,2)"></button>
-                    <button id="button53" onclick="Board(5,3)"></button>
-                    <button id="button54" onclick="Board(5,4)"></button>
-                    <button id="button55" onclick="Board(5,5)"></button>
-                    <button id="button56" onclick="Board(5,6)"></button>
-                    <button id="button57" onclick="Board(5,7)"></button>
-                </div>
+            <div class="b">
+                <button id="button50" onclick="Board(5,0)"></button>
+                <button id="button51" onclick="Board(5,1)"></button>
+                <button id="button52" onclick="Board(5,2)"></button>
+                <button id="button53" onclick="Board(5,3)"></button>
+                <button id="button54" onclick="Board(5,4)"></button>
+                <button id="button55" onclick="Board(5,5)"></button>
+                <button id="button56" onclick="Board(5,6)"></button>
+                <button id="button57" onclick="Board(5,7)"></button>
+            </div>
 
-                <div class="b">
-                    <button id="button60" onclick="Board(6,0)"></button>
-                    <button id="button61" onclick="Board(6,1)"></button>
-                    <button id="button62" onclick="Board(6,2)"></button>
-                    <button id="button63" onclick="Board(6,3)"></button>
-                    <button id="button64" onclick="Board(6,4)"></button>
-                    <button id="button65" onclick="Board(6,5)"></button>
-                    <button id="button66" onclick="Board(6,6)"></button>
-                    <button id="button67" onclick="Board(6,7)"></button>
-                </div>
+            <div class="b">
+                <button id="button60" onclick="Board(6,0)"></button>
+                <button id="button61" onclick="Board(6,1)"></button>
+                <button id="button62" onclick="Board(6,2)"></button>
+                <button id="button63" onclick="Board(6,3)"></button>
+                <button id="button64" onclick="Board(6,4)"></button>
+                <button id="button65" onclick="Board(6,5)"></button>
+                <button id="button66" onclick="Board(6,6)"></button>
+                <button id="button67" onclick="Board(6,7)"></button>
+            </div>
 
-                <div class="b">
-                    <button id="button70" onclick="Board(7,0)"></button>
-                    <button id="button71" onclick="Board(7,1)"></button>
-                    <button id="button72" onclick="Board(7,2)"></button>
-                    <button id="button73" onclick="Board(7,3)"></button>
-                    <button id="button74" onclick="Board(7,4)"></button>
-                    <button id="button75" onclick="Board(7,5)"></button>
-                    <button id="button76" onclick="Board(7,6)"></button>
-                    <button id="button77" onclick="Board(7,7)"></button>
-                </div>
+            <div class="b">
+                <button id="button70" onclick="Board(7,0)"></button>
+                <button id="button71" onclick="Board(7,1)"></button>
+                <button id="button72" onclick="Board(7,2)"></button>
+                <button id="button73" onclick="Board(7,3)"></button>
+                <button id="button74" onclick="Board(7,4)"></button>
+                <button id="button75" onclick="Board(7,5)"></button>
+                <button id="button76" onclick="Board(7,6)"></button>
+                <button id="button77" onclick="Board(7,7)"></button>
             </div>
 
         </div>
-    </div>
 
-
+    </container>
     <script src="Othello.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <script>
-
-    </script>
 </body>
+
+</html>
 
 </html>
