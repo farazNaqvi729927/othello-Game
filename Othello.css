@@ -3,25 +3,17 @@ body {
     color: white;
 }
 
-
-.a {
-    margin-top: 200px;
-    width: 282px;
-    margin-left: 540px;
-}
-
-
-.b {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    color: white;
+.title {
+    color: chartreuse;
+    text-align: center;
+    margin-top: 0.5em;
 }
 
 
 button {
-    width: 35px;
-    height: 35px;
-    font-size: 18px;
+    width: calc(1.5rem + 2vw); 
+    height: calc(1.5rem + 2vw);
+    font-size: calc(1rem + 1vw);;
     font-weight: bold;
     background-color: green;
     color: white;
@@ -29,85 +21,42 @@ button {
 
 
 
+.a {
+    margin-top: 1em;
+}
 
-.head {
-    margin-left: 580px;
+
+.b {
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    justify-content: center;
+}
+
+
+
+#turn1{
+    color: black;
+    text-align: center;
+    margin-top: 1em;
+    font-size: calc(1rem + 2vw);;
 }
 
 
 
 
-
-@media (min-width: 768px) {
-
-
-    .head {
-        margin-left: 35%;
-    }
-
-
-    #turn {
-        margin-Left: 31%;
-        position: absolute;
-        top: 27%;
-    }
-
-
-    .a {
-        margin-top: 25%;
-        width: 282px;
-        margin-left: 29%;
-    }
-
-
-    #b {
-        margin-Left: -42.5%;
-
-    }
-    
-
-
+#turn2{
+    text-align: center;
+    font-size: calc(1rem + 2vw);;
 }
 
 
 
-
-
-
-
-
-
-@media (min-width:1024px) {
-
-
-    .head {
-        margin-left: 40%;
-    }
-
-
-
-    #b {
-        margin-Left: -18.5%;
-
-    }
-
-
-
-
-    #turn {
-        margin-Left: 36.5%;
-        position: absolute;
-        top: 27%;
-    }
-
-
-
-    .a {
-        margin-top: 18%;
-        width: 282px;
-        margin-left: 36%;
-    }
-
+#turn3{
+    color: rgb(233, 236, 11);
+    text-align: center;
+    margin-top: 2em;
+    font-size: calc(1rem + 1.5vw);;
 
 }
 
@@ -115,113 +64,3 @@ button {
 
 
 
-
-
-
-@media (min-width:1440px) {
-
-
-    .head {
-        margin-left: 40%;
-        font-size: 50px;
-    }
-
-
-
-    #b {
-        margin-Left: -1%;
-        font-size: 23px;
-
-    }
-
-
-
-
-    #turn {
-        margin-Left: 37.5%;
-        position: absolute;
-        top: 27%;
-        font-size: 23px;
-    }
-
-
-
-    .a {
-        margin-top: 18%;
-        width: 282px;
-        margin-left: 38.2%;
-    }
-
-
-
-
-    button {
-        width: 45px;
-        height: 45px;
-        font-size: 28px;
-        font-weight: bold;
-        background-color: green;
-        color: white;
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-@media (min-width:1920px) {
-
-
-    .head {
-        margin-left: 41%;
-        font-size: 60px;
-    }
-
-
-
-    #b {
-        margin-Left: 9%;
-        font-size: 30px;
-        margin-top: 20px;
-    }
-
-
-
-
-    #turn {
-        margin-Left: 38.5%;
-        position: absolute;
-        top: 27%;
-        font-size: 28px;
-    }
-
-
-
-    .a {
-        margin-top: 18%;
-        width: 282px;
-        margin-left: 39.2%;
-    }
-
-
-
-
-    
-    button {
-        width: 55px;
-        height: 55px;
-        font-size: 28px;
-        font-weight: bold;
-        background-color: green;
-        color: white;
-    }
-
-
-}
