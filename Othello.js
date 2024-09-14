@@ -29,7 +29,15 @@ const Display1 = document.getElementById('b');
 
 let symbol = true;
 
+
+setTimeout(() => {
+    alert('Black should make the first move then game will start!')
+}, 1000);
+
+
+
 const Board = (r, c) => {
+
     const elementId = document.getElementById(`button${r}${c}`);
     let anyFlippingHappened = false;
 
@@ -641,76 +649,68 @@ const Board = (r, c) => {
 
         if (allCellsFilled) {// this will run when the board is filled completely
             if (countB > countW) {
-                Display1.innerHTML = `
-                    <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs :
-                        ${countB}
-                    </h2>
-                    <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs :
-                        ${countW}
-                    </h2>`;
+
+                Display1.innerHTML = `<h2 id="turn1" >Black Discs :  ${countB} </h2>
+                 <h2 id="turn2">White Discs :  ${countW} </h2>`;
 
                 alert('The Winner is Black Colour!');
-
-
                 Display.innerHTML = '';
 
             }
 
             else if (countW > countB) {
                 Display1.innerHTML = `
-                <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs :
-                    ${countB}
-                </h2>
-                
-                <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs :
-                    ${countW}
-                </h2>`;
+                        <h2 id="turn1" >Black Discs :
+                            ${countB}
+                        </h2>
+   
+                        <h2 id="turn2">White Discs :
+                            ${countW}
+                        </h2>`;
 
                 alert('The Winner is White Colour!');
-
                 Display.innerHTML = '';
             }
 
 
             else if (countB === countW) {
-
                 Display1.innerHTML = `
-                <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs :
-                    ${countB}
-                </h2>
-
-                <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs :
-                    ${countW}
-                </h2>`;
+                        <h2 id="turn1" >Black Discs :
+                            ${countB}
+                        </h2>
+   
+                        <h2 id="turn2">White Discs :
+                            ${countW}
+                        </h2>`;
 
                 alert('Its a Tie!');
-
                 Display.innerHTML = '';
             }
-
-
 
         }
 
 
-
         else {
             Display1.innerHTML = `
-                <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs Number:
+                <h2 id="turn1" >Black Discs Number:
                     ${countB}
                 </h2>
-                <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs Number:
+                <h2 id="turn2" >White Discs Number:
                     ${countW}
                 </h2>`;
+
+
             Display.innerHTML = `
-                <h2 id="turn1">
-                    ${symbol ? '<div style="color: black;">Next Player Turn = Black</div>' : '<div>Next Player Turn = White</div>'}
-                </h2>`;
+            <div id="turn3">
+                ${symbol ? '<div> Player Turn = Black </div>' : '<div> Player Turn = White </div>'}
+            </div>`;
+
         }
     }
 
     isBoardFull();
 }
+
 
 
 
