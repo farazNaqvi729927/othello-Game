@@ -6,17 +6,18 @@ body {
 .title {
     color: chartreuse;
     text-align: center;
-    margin-top: 0.5em;
 }
 
 
 button {
-    width: calc(1.5rem + 2vw); 
-    height: calc(1.5rem + 2vw);
-    font-size: calc(1rem + 1vw);;
+    width: calc(1rem + 2.5vw);
+    height: calc(1rem + 2.5vw);
+    font-size: calc(1rem + 1vw);
     font-weight: bold;
     background-color: green;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -35,32 +36,27 @@ button {
 
 
 
-#turn1{
+#turn1 {
     color: black;
     text-align: center;
     margin-top: 1em;
-    font-size: calc(1rem + 2vw);;
+    font-size: calc(1rem + 1.5vw);
 }
 
 
 
 
-#turn2{
+#turn2 {
     text-align: center;
-    font-size: calc(1rem + 2vw);;
+    font-size: calc(1rem + 1.5vw);
 }
 
 
 
-#turn3{
+#turn3 {
     color: rgb(233, 236, 11);
     text-align: center;
-    margin-top: 2em;
-    font-size: calc(1rem + 1.5vw);;
+    margin-top: 1em;
+    font-size: calc(1rem + 1.5vw);
 
 }
-
-
-
-
-
